@@ -8,7 +8,7 @@ export class TopPage {
     constructor(page: Page) {
         this.page = page;
         this.searchBox = page.getByPlaceholder('なにをお探しですか？');
-        this.categorySearch = page.getByRole('link', { name: 'カテゴリーからさがす' })
+        this.categorySearch = page.getByRole('link', { name: 'カテゴリーからさがす' });
     }
 
     async gotoURL() {
